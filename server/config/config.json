@@ -1,0 +1,10 @@
+{
+  "development": {
+    "port": 5434,
+    "username": "postgres",
+    "password": "AT0Icantik",
+    "database": "ticket",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
