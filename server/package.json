@@ -7,7 +7,8 @@
     "db:create": "sequelize-cli db:create",
     "db:migrate": "sequelize-cli db:migrate",
     "db:seed": "sequelize-cli db:seed:all",
-    "model": "sequelize-cli model:generate"
+    "model": "sequelize-cli model:generate",
+    "db:update": "sequelize-cli migration:generate --name"
   },
   "keywords": [],
   "author": "",

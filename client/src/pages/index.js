@@ -5,13 +5,16 @@ The purpose of this file, is so that ypu can import all the pages at once. This 
 import Dashboard from "./Dashboard";
 import Login from "./Login";
 import Task from "./Task";
-import Settings from "./Settings";
 import Profile from "./Profile";
+import UserRolesForm from "./UserRole/user_roles_form";
+import UserRolesTable from "./UserRole/user_roles_table";
 
 export {
     Dashboard,
     Login,
     Task,
-    Settings,
     Profile,
+    UserRolesForm,
+    UserRolesTable
+    
 };
