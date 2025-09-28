@@ -1,8 +1,8 @@
 {
   "development": {
-    "port": 5434,
-    "username": "postgres",
-    "password": "AT0Icantik",
+    "port": 5432,
+    "username": "alinaenna",
+    "password": "Codej_953",
     "database": "ticket",
     "host": "127.0.0.1",
     "dialect": "postgres"
