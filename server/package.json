@@ -7,9 +7,11 @@
     "db:create": "sequelize-cli db:create",
     "db:migrate": "sequelize-cli db:migrate",
     "db:seed": "sequelize-cli db:seed:all",
-    "model": "sequelize-cli model:generate",
-    "db:update": "sequelize-cli migration:generate --name"
+    "model": "sequelize-cli model:generate", 
+    "db:update": "sequelize-cli migration:generate --name",
+    "db:undo": "sequelize-cli db:migrate:undo"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,6 +28,8 @@
     "sequelize-cli": "^6.6.3"
   }
 }
+
+
 
 
 

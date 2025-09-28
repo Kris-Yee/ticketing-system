@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Role extends Model {
+  class tb_action_param extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,14 +13,21 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Role.init({
-    roleName: DataTypes.STRING,
-    status: DataTypes.BOOLEAN,
-    deletedAt: DataTypes.DATE
+  tb_action_param.init({
+    actionParamName: DataTypes.STRING,
+    dataType: DataTypes.STRING,
+    isCompulsary: DataTypes.BOOLEAN,
+    createdBy: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    updatedBy: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
   }, {
     sequelize,
-    modelName: 'Role',
-    paranoid: true,
+    modelName: 'tb_action_param',
   });
-  return Role;
+  return tb_action_param;
 };
